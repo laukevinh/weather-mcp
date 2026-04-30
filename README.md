@@ -6,9 +6,13 @@ This is a simple weather MCP following Anthropic's guide: https://modelcontextpr
 
 Learn more: https://modelcontextprotocol.io/docs/develop/build-server
 
-## Windows Client + WSL Server
+## Running as local MCP server
+
+### Windows Client + WSL Server
 
 Here are instructions on how to set up an MCP server in WSL and Claude for Desktop as MCP client in Windows.
+
+Build your MCP server `npm run build`
 
 Install Claude for Desktop for Windows.
 
@@ -33,7 +37,7 @@ In chat, check for `weather-mcp` in the `+` icon.
 
 Try asking about the weather where you live.
 
-### Troubleshooting
+#### Troubleshooting
 
 Claude for Desktop failed to load MCP. I clicked open the link to logs and saw
 
@@ -45,3 +49,15 @@ operable program or batch file.
 ```
 
 I installed node for Windows. Used the Microsoft recommended https://github.com/coreybutler/nvm-windows.
+
+### Claude Code Client + WSL Server
+
+Build your MCP server `npm run build`
+
+Add MCP server to claude code. By default it's local scoped. We'll set to user scope. Read more at https://code.claude.com/docs/en/mcp.
+
+```
+claude mcp add --scope user weather-mcp -- node ~/weather-mcp/build/index.js
+```
+
+Start up claude and ask about the weather
