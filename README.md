@@ -2,7 +2,9 @@
 
 ## Overview
 
-This is a simple weather MCP following Anthropic's guide: https://code.claude.com/docs/en/mcp/
+This is a simple weather MCP following Anthropic's guide: https://modelcontextprotocol.io/docs/develop/build-server
+
+Learn more: https://modelcontextprotocol.io/docs/develop/build-server
 
 ## Windows Client + WSL Server
 
