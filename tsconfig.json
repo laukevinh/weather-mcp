@@ -6,7 +6,7 @@
     "moduleResolution": "node16",
     "esModuleInterop": true,
     "target": "es2022",
-    "types": [],
+    "types": ["node"],
     "sourceMap": true,
     "declaration": true,
     "declarationMap": true,
